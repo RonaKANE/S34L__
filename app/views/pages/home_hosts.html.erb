@@ -1,0 +1,16 @@
+<%= form_tag "/hosts", method: "post" do %>
+
+    <input type="text" name="user_id" value="The user ID of the machin's owner"/>
+    <input type="text" name="hostname" value="hostname"/>
+    <input type="text" name="serial_number" value="serial number"/>
+    <input type="text" name="reference_orange" value="orange reference"/>
+    <input type="text" name="location" value="location"/> <br>
+    <input type="text" name="project_name" value="project_name"/>
+    <input type="text" name="brand" value="brand"/> <br>
+    <input type="text" name="model" value="model"/> <br>
+    <input type="text" name="certificate" value="certificate"/>
+    <input type="text" name="electricity_consumption" value="electricity_consumption"/>
+    0 if used 1 if not <input type="number" name="state" min="0" max="1" />
+    <input type="submit" value="Ajouter la machine" />
+
+<% end %>
